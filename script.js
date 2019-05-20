@@ -182,7 +182,7 @@ console.log(trueOrFalse());
 // Condition 2 :
 
 // != différent de
-// == égalité avec conversion 55 et "55"
+// == égalité avec conversion 55 et "55" : OK
 // === égalité parfaite
 // > supérieur à
 // < inférieur à
@@ -199,7 +199,8 @@ function testEqual(val){
 
 console.log(testEqual(50));
 
-// Condition 3 : opérateur and
+// Condition 3 : opérateur and et or
+
 function equalAnd(val, str) {
   if (val == 25 && str=="yes"){
     return "condition rempli"
@@ -207,7 +208,62 @@ function equalAnd(val, str) {
   return "Condition non rempli"
 }
 
+// OR
 console.log(equalAnd(25, "yes"))
 
+function or(val) {
+  if (val == 25 || val == 50){
+    return "condition rempli val = " + val
+  } 
+  else {
+    return "Condition non rempli"
+  }
+}
 
+console.log(or(50))
 
+function testSize(num){
+  if (num > 5 && num < 10 ){
+    return "plus grand que 5"
+  }
+  
+  else if (num > 10 && num < 20 ){
+    return "plus grand que 10"
+  }
+  
+  else if (num > 20){
+    return "plus grand que 20"
+  }
+  
+  else {
+    return "plus petit que 5"
+  }
+}
+
+console.log(testSize(6))
+
+// Choix d'un index avec switch
+
+function Switch(val){
+  var answer = "";
+  
+    switch(val){
+      
+      case 1:
+        answer = "alpha(1)";
+        break;
+
+      case 2:
+        answer = "Beta(2)";
+        break;
+        
+      // Resultat par défaut  
+      default:
+        answer = "stuff"
+        
+    };
+    
+  return answer
+}
+
+console.log(Switch())
