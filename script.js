@@ -140,14 +140,74 @@ function reusableFunction(a=5, b=6){
 }
 reusableFunction(7, 9)
 
+var myGlobal = 20;
 
+function fun1(){
+  var myVarFunction = 5;
+  console.log(myVarFunction);
+  var myGlobal = 35;
+  return myGlobal;
+}
 
+fun1()
+console.log(myGlobal) // Renvoi 20
+console.log(fun1()) // renvoi 35
+// console.log(myVarFunction) ne fonctionne pas
 
+var recupMyGlobal = fun1()
+console.log(recupMyGlobal)
 
+// Boolean
 
+function welcomBoolean(){
+  return true
+}
 
+var testTrue = welcomBoolean()
+console.log(testTrue)
 
+// Condition 1
 
+function trueOrFalse(self){
+  if (self) {
+    return "yes the true"
+  }
+  return "No that was false"
+}
+
+console.log(trueOrFalse("un élément"));
+
+console.log(trueOrFalse());
+
+// Condition 2 :
+
+// != différent de
+// == égalité avec conversion 55 et "55"
+// === égalité parfaite
+// > supérieur à
+// < inférieur à
+// >= plus grand ou égal
+// <= plus petit ou égal
+
+function testEqual(val){
+  
+  if (val === 50){
+    return "equal"
+  }
+  return "Not Equal"
+}
+
+console.log(testEqual(50));
+
+// Condition 3 : opérateur and
+function equalAnd(val, str) {
+  if (val == 25 && str=="yes"){
+    return "condition rempli"
+  }
+  return "Condition non rempli"
+}
+
+console.log(equalAnd(25, "yes"))
 
 
 
