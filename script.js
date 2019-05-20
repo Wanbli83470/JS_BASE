@@ -115,11 +115,30 @@ console.log(arrayAdvance[1][1]) //  On accède à l'élément 2 du tableau 1
 arraySimple[0] = "OK"
 console.log(arraySimple[0])
 
+// Ajout
+arraySimple.push("test", "ajout")
+console.log(arraySimple)
 
 
+// Suppression
+// Dernière élément
+arraySimple.pop()
+console.log(arraySimple)
 
+// première élément
+arraySimple.shift()
+console.log(arraySimple)
 
+var myList = [["cereal", 3], ["milk", 2], ["bananas", 3]]
 
+// Fonction avec paramètres
+
+function reusableFunction(a=5, b=6){
+  console.log("Hello, World voici le calcul de " + a + "+" + b)
+  console.log("c'est égale à " + (a + b))
+  
+}
+reusableFunction(7, 9)
 
 
 
