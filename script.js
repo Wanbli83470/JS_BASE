@@ -289,3 +289,60 @@ console.log(age)
 
 var chiffre = numbers[7]
 console.log(chiffre)
+
+// JavaScript object
+var myDog = {
+  "Name" : "darky",
+  "age" : 10,
+  "Maitre" : "Thomas",
+  "ville" : ""
+  
+};
+
+var numbers = {
+  7 : "Chance"
+};
+
+// accès au éléments objets
+
+var nom = myDog.Name;
+var age = myDog["age"];
+console.log(age);
+
+var chiffre = numbers[7];
+console.log(chiffre);
+
+// Update property
+myDog.Name = "Happy Darky";
+var nom = myDog.Name;
+console.log(nom);
+
+// Add property Ecrire la propriété 
+// simplement comme si on l'a modifié 
+myDog.wouf = "wouf";
+console.log(myDog.wouf);
+
+// Delete the property
+delete myDog.wouf;
+
+// Boucle while
+
+var maList = [];
+var i = 0;
+
+while(i <= 5) {
+  maList.push(i);
+  i++;
+}
+
+console.log(maList)
+
+// Boucle for
+
+var maListFor = []
+
+for (var i=0; i < 10; i++ ){
+  maListFor.push(i);
+}
+
+console.log("Liste avec for = " + maListFor)
