@@ -267,3 +267,25 @@ function Switch(val){
 }
 
 console.log(Switch())
+
+// JavaScript object
+var myDog = {
+  "Name" : "Darky",
+  "age" : 10,
+  "Maitre" : "Thomas",
+  "ville" : ""
+  
+}
+
+var numbers = {
+  7 : "Chance"
+}
+
+// accès au éléments objets
+
+var nom = myDog.Name
+var age = myDog["age"]
+console.log(age)
+
+var chiffre = numbers[7]
+console.log(chiffre)
